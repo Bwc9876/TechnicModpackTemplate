@@ -1,0 +1,5 @@
+# Prevent paths like .gitignore, .gitattributes, etc from being archived in the release zip.
+.* export-ignore
+
+# Don't Include the README in acrhives
+README.md export-ignore
