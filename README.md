@@ -22,17 +22,19 @@ A template you can use to create Technic launcher mod packs through GitHub.
 
 ## Publishing Your Modpack
 
-1. Select the "Actions" tab in GitHub and press "Create Release", then press the "run workflow" button, and confirm.
+1. Go to Settings > Actions > General, scroll to the bottom and ensure write permissions are set on actions
 
-2. This will automatically create a new GitHub release for your modpack in the form of a zip file, set the version to something like `0.0.1`.
+2. Select the "Actions" tab in GitHub and press "Create Release", then press the "run workflow" button, and confirm.
 
-3. After the build finishes, Head back to the "Code" tab and right-click the "Releases" and copy the link, we'll need this later.
+3. This will automatically create a new GitHub release for your modpack in the form of a zip file, set the version to something like `0.0.1`.
 
-4. Head to the [Technic Platform](https://www.technicpack.net/modpack/create) and make a new modpack.
+4. After the build finishes, Head back to the "Code" tab and right-click the "Releases" and copy the link, we'll need this later.
 
-5. Select "Edit Modpack" and paste that url we copied earlier into the "Modpack location field", then add `/latest/download/modpack.zip` to the end of it.
+5. Head to the [Technic Platform](https://www.technicpack.net/modpack/create) and make a new modpack.
 
-6. Click "Update Modpack" at the bottom
+6. Select "Edit Modpack" and paste that url we copied earlier into the "Modpack location field", then add `/latest/download/modpack.zip` to the end of it.
+
+7. Click "Update Modpack" at the bottom
 
 ## Installing Your Modpack
 
