@@ -12,9 +12,7 @@ A template you can use to create Technic launcher mod packs through GitHub.
 
 4. Copy the contents of the `mods` and `configs` folders and into the `mods` and `configs` folder of the repo respectively.
 
-5. Download [the universal modpack jar](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) for your Minecraft version.
-
-6. If only the installer is available, install forge normally and head to `%APPDATA%/.minecraft/versions`, select your forge version, and copy the jar file there
+5. Download [the installer jar](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) for your Minecraft version.
 
 6. Rename this jar file to `modpack.jar` and place it in the `bin` folder of the repo.
 
@@ -32,7 +30,7 @@ A template you can use to create Technic launcher mod packs through GitHub.
 
 5. Head to the [Technic Platform](https://www.technicpack.net/modpack/create) and make a new modpack.
 
-6. Select "Edit Modpack" and paste that url we copied earlier into the "Modpack location field", then add `/latest/download/modpack.zip` to the end of it.
+6. Select "Edit Modpack" and paste that url we copied earlier into the "Modpack location" field, then add `/latest/download/modpack.zip` to the end of it.
 
 7. Click "Update Modpack" at the bottom
 
