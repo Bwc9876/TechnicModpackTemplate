@@ -10,7 +10,7 @@ A template you can use to create Technic launcher mod packs through GitHub.
 
 3. Open `%APPDATA%\.minecraft` (this can be done by pressing Windows key + R and then pasting it in).
 
-4. Copy the contents of the `mods` and `configs` folders and into the `mods` and `configs` folder of the repo respectively.
+4. Copy the contents of the `mods` and `config` folders into the `mods` and `config` folders of the repo respectively.
 
 5. Download [the installer jar](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) for your Minecraft version.
 
@@ -26,7 +26,7 @@ A template you can use to create Technic launcher mod packs through GitHub.
 
 3. This will automatically create a new GitHub release for your modpack in the form of a zip file, set the version to something like `0.0.1`.
 
-4. After the build finishes, Head back to the "Code" tab and right-click the "Releases" and copy the link, we'll need this later.
+4. After the build finishes, Head back to the "Code" tab and right-click "Releases" and copy the link, we'll need this later.
 
 5. Head to the [Technic Platform](https://www.technicpack.net/modpack/create) and make a new modpack.
 
@@ -52,6 +52,8 @@ Requires `wget` and `unzip`.
 wget "https://github.com/{username}/{repo_name}/releases/latest/download/modpack.zip" && unzip modpack.zip
 ```
 
+Alternatively, you can simply clone this repo onto the server and use that for much faster updates.
+
 ## Updating Your Modpack 
 
 1. Edit whatever files on your local machine and commit/push.
@@ -63,3 +65,9 @@ wget "https://github.com/{username}/{repo_name}/releases/latest/download/modpack
 4. Wait for the action to finish
 
 5. Head to Technic, edit the modpack and select "Versions", fill out your new version number and the change notes.
+
+6. You may have to relaunch the Technic launcher for the update to appear
+
+## Optional Steps
+
+1. You can delete all the `.gitkeep` files, they're simply there to allow the directories to exist
