@@ -1,4 +1,4 @@
-# AutoModpack
+# Technic Mod Pack Template
 
 A template you can use to create Technic launcher mod packs through GitHub.
 
