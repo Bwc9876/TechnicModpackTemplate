@@ -1,0 +1,38 @@
+
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        required: true
+        description: "Version tag to use for the release should follow semver"
+        
+jobs:
+  CreateRelease:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Create Release Zip
+        run: git archive --format zip --output modpack.zip HEAD
+        
+      - name: Upload Artifact   
+        uses: actions/upload-artifact@v2
+        with:
+          name: modpack.zip
+          path: modpack.zip
+        
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: false
+          commit: main
+          tag: ${{ inputs.version }}
+          name: Version ${{ inputs.version }}
+          artifacts: "modpack.zip"
+          draft: false
+          prerelease: false
+          
